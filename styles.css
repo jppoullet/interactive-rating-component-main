@@ -1,0 +1,143 @@
+/*
+- Orange: hsl(25, 97%, 53%)
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Light Blue: hsl(214, 19%, 26%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+*/
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    text-align: left;
+    font-family: 'overpass', sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+p {
+    color: hsl(217, 12%, 63%);    
+}
+
+.container {
+    background-color: hsl(213, 19%, 18%);
+    margin: 10rem auto;
+    padding: 1.5em;
+    width: min(20rem,75%);
+    border-radius: 7%;
+}
+
+/* ----- Rating Selection ----- */
+
+.ratingState {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.star {
+    width: 40%;
+}
+
+.starPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(214, 19%, 26%);
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+}
+
+.numberRatings {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.rating {
+    background-color: hsl(214, 19%, 26%);
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    font-family: 'overpass', sans-serif;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating:hover {
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+}
+
+.ratingClick {
+    background-color: hsl(217, 12%, 63%);
+    color:hsl(0, 0%, 100%);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 2em;
+    border: none;
+    width: 100%;
+    margin: auto;
+    padding: 1em;
+    font-family: 'overpass', sans-serif;
+    font-weight: 700;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%)
+}
+
+
+/* ----- Thank You Message ----- */
+
+
+.thankYouState {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ratingSelected {
+    background-color: hsl(214, 19%, 26%);
+    color:hsl(25, 97%, 53%);
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    margin: 1em;
+}
+
+/* ----- Footer ----- */
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+
+}
