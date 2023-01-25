@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](design/screenshot.png)
+![screenshot](design/screenshot.png)
 
 ### Links
 
@@ -53,7 +53,7 @@ Users should be able to:
 - Accessing the value of the selected rating input
 
 ```css
-checked.ratingInput:checked + .ratingLabel)
+.ratinginput: checked + .ratingLabel;
 ```
 
 ```js
