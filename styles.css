@@ -62,7 +62,7 @@ p {
     margin: 20px 0px;
 }
 
-.rating {
+.ratingLabel {
     background-color: hsl(214, 19%, 26%);
     color: hsl(217, 12%, 63%);
     font-weight: 700;
@@ -74,14 +74,24 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.rating:hover {
+.ratingInput {
+    display: none;
+}
+
+.ratingLabel:hover {
     background-color: hsl(25, 97%, 53%);
     color:hsl(0, 0%, 100%);
 }
 
-.ratingClick {
+/* .ratingClicked {
+    background-color: hsl(217, 12%, 63%);
+    color:hsl(0, 0%, 100%);
+} */
+
+.ratingInput:checked + .ratingLabel {
     background-color: hsl(217, 12%, 63%);
     color:hsl(0, 0%, 100%);
 }
@@ -100,13 +110,20 @@ p {
     font-weight: 700;
     letter-spacing: .25em;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.submit:disabled {
+    display: flex;
+    justify-content: center;
+    background-color: hsla(25, 97%, 53%, 0.178);
+    color: unset;
 }
 
 .submit:hover {
     background-color: white;
     color: hsl(25, 97%, 53%)
 }
-
 
 /* ----- Thank You Message ----- */
 

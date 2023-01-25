@@ -1,21 +1,22 @@
 "use strict";
 
-let numberRatings = document.querySelectorAll(".rating")
-let selectedRating;
+let numberRatings = document.querySelectorAll(".ratingLabel");
 
-for (let i = 0; i < numberRatings.length; i++) {
-    numberRatings[i].addEventListener("click", function() {
-        selectedRating = this.innerHTML;
-        document.querySelector(".submit").disabled = false;
+const form = document.getElementById("ratingsForm");
 
-        //This removes ratingsClick class from all buttons
-        numberRatings.forEach((ratingBtn) => {
-            ratingBtn.classList.remove('ratingClick');
-        })
+// for (let i = 0; i < numberRatings.length; i++){
+//     numberRatings[i].addEventListener("click", function() {
+//         selectedRating = this.value;
 
-        //Add ratingClick to the clicked button
-        numberRatings[i].classList.add('ratingClick'); 
-});
+//         // //This removes ratingsClick class from all buttons
+//         // numberRatings.forEach((ratingBtn) => {
+//         //     ratingBtn.classList.remove('ratingClicked');
+//         // });
+
+//         // //Add ratingClick to the clicked button
+//         // numberRatings[i].classList.add('ratingClicked');
+//     });
+// };
 
 // if (selectedRating) {
 //     document.querySelector(".submit-disabled").classList.remove('submit-disabled');
@@ -25,13 +26,17 @@ for (let i = 0; i < numberRatings.length; i++) {
 //     document.querySelector(".submit-disabled").classList.add('submit-disabled');
 // }
 
-
-// When clicking submit button
-document.querySelector(".submit").addEventListener("click", submitClick)
+// // When clicking submit button
 function submitClick() {
-      document.querySelector('.ratingState').style.display = 'none';
-      document.querySelector('.thankYouState').style.display = 'flex';
-      //Change to the global variable
-      document.querySelector('.ratingSelected').textContent = `You selected ${selectedRating} out of 5`;
-    }
-};
+  // e.preventDefault()
+  let selectedRating = document.querySelector(
+    'input[name="rating"]:checked'
+  ).value;
+
+  document.querySelector(".ratingState").style.display = "none";
+  document.querySelector(".thankYouState").style.display = "flex";
+  //Change to the global variable
+  document.querySelector(
+    ".ratingSelected"
+  ).textContent = `You selected ${selectedRating} out of 5`;
+}

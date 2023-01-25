@@ -17,21 +17,28 @@
 
   <div class="container">
     <div class="ratingState">
-      <picture class="starPic"><img class="star" src="images/icon-star.svg" alt="star icon"></picture>
+      <div class="starPic"><img class="star" src="images/icon-star.svg" alt="star icon"></div>
       <h1>How did we do?</h1>
       
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
 
-      <div class="numberRatings">
-        <div><button class="rating">1</button></div>
-        <div><button class="rating">2</button></div>
-        <div><button class="rating">3</button></div>
-        <div><button class="rating">4</button></div>
-        <div><button class="rating">5</button></div>
-      </div>
+      <form class="numberRatings" id="ratingsForm">
 
-      <button disabled class="submit submit-disabled">Submit</button>
+        <input class="ratingInput" id="ratingOne" type='radio' name='rating' value='1'>
+        <label class="ratingLabel" for="ratingOne">1</label>
+        <input class="ratingInput" id="ratingTwo" type='radio' name='rating' value='2'>
+        <label class="ratingLabel" for="ratingTwo">2</label>
+        <input class="ratingInput" id="ratingThree" type='radio' name='rating' value='3'>
+        <label class="ratingLabel" for="ratingThree">3</label>
+        <input class="ratingInput" id="ratingFour" type='radio' name='rating' value='4'>
+        <label class="ratingLabel" for="ratingFour">4</label>
+        <input class="ratingInput" id="ratingFive" type='radio' name='rating' value='5'>
+        <label class="ratingLabel" for="ratingFive">5</label>
+        
+      </form>
+      <input type="submit" class="submit" value="Submit" onclick="submitClick()">
+      <!-- <button disabled class="submit submit-disabled">Submit</button> -->
     </div>
 
 
