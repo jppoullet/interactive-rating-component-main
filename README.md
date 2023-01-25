@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](design./screenshot.png)
+![](design/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/interactive-rating-component-cN5pSkXK_T)
-- Live Site URL: [Add live site URL here](https://jppoullet.github.io/interactive-rating-component-main/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-cN5pSkXK_T)
+- Live Site URL: [https://jppoullet.github.io/interactive-rating-component-main/](https://jppoullet.github.io/interactive-rating-component-main/)
 
 ## My process
 
@@ -44,23 +44,24 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Javascript
 
 ### What I learned
 
-```html
 - Using a form with radio inputs - Submit input with onclick funtion
-```
+- Setting a style to the input & label using CSS
+- Accessing the value of the selected rating input
 
 ```css
-- Setting a style to the input & label using CSS (ex. checked.ratingInput:checked + .ratingLabel)
+checked.ratingInput:checked + .ratingLabel)
 ```
 
 ```js
-- Accessing the value of the selected rating input (ex. document.querySelector('input[name="rating"]:checked').value;)
+document.querySelector('input[name="rating"]:checked').value;
 ```
 
 ### Useful resources
 
-- [Example resource 2](https://www.youtube.com/watch?v=fNcJuPIZ2WE&t=387s) - Help with understanding HTML Forms
-- [Example resource 2](https://www.youtube.com/watch?v=GDh9uToZkYg&t=308s) - Help with understanding radio inputs and specifically styling them
-- [Example resource 3](https://www.youtube.com/watch?v=r3Oc4IUP0XI) - Help with submit button and onclick function
+- [Youtube vid 1](https://www.youtube.com/watch?v=fNcJuPIZ2WE&t=387s) - Help with understanding HTML Forms
+- [Youtube vid 2](https://www.youtube.com/watch?v=GDh9uToZkYg&t=308s) - Help with understanding radio inputs and specifically styling them
+- [Youtube vid 3](https://www.youtube.com/watch?v=r3Oc4IUP0XI) - Help with submit button and onclick function
